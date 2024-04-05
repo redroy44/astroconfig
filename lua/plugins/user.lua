@@ -6,7 +6,9 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
+  -- "andweeb/presence.nvim",
+
+  "ckipp01/nvim-jenkinsfile-linter",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",

@@ -15,7 +15,8 @@ return {
       "json",
       "markdown",
       "html",
-      "jsonc"
+      "jsonc" ,
+      "groovy"
       -- add more arguments for adding more treesitter parsers
     })
   end,
