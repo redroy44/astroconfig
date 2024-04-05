@@ -1,7 +1,6 @@
 return {
   {
     "navarasu/onedark.nvim",
-    lazy = false,
     name = "onedark",
     config = function()
       require("onedark").setup {}
@@ -10,10 +9,6 @@ return {
   {
     "shaunsingh/nord.nvim",
     name = "nord",
-    lazy = false,
-    -- config = function()
-    --   require("nord").setup {}
-    -- end,
   },
     {
       "rebelot/kanagawa.nvim",
