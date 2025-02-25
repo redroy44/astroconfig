@@ -9,11 +9,11 @@ return {
   -- "andweeb/presence.nvim",
 
   "ckipp01/nvim-jenkinsfile-linter",
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
+  -- {
+  --   "ray-x/lsp_signature.nvim",
+  --   event = "BufRead",
+  --   config = function() require("lsp_signature").setup() end,
+  -- },
   {
     "rcarriga/nvim-dap-ui",
     config = function(plugin, opts)

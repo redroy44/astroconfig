@@ -61,6 +61,7 @@ return {
         -- -- second key is the lefthand side of the map
         -- -- mappings seen under group name "Buffer"
         ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+        ["<leader>gk"] = { "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Toggle current line blame" },
         ["<leader>bD"] = {
           function()
             require("astroui.status.heirline").buffer_picker(function(bufnr) require("astrocore.buffer").close(bufnr) end)

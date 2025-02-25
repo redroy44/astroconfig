@@ -9,7 +9,7 @@ return {
     utils.set_mappings {
       n = {
         [prefix] = { name = icon .. "Diff View" },
-        [prefix .. "<cr>"] = {
+        [prefix .. "D"] = {
           "<cmd>DiffviewOpen<cr>",
           desc = "Open DiffView",
         },
@@ -20,6 +20,10 @@ return {
         [prefix .. "H"] = {
           "<cmd>DiffviewFileHistory<cr>",
           desc = "Open DiffView Branch History",
+        },
+        [prefix .. "M"] = {
+          "<cmd>DiffviewOpen HEAD..origin/main --imply-local<cr>",
+          desc = "Open DiffView diff against main",
         },
       },
       x = {
@@ -36,7 +40,7 @@ return {
       local i = 1
       for lhs, def in
         pairs(utils.extend_tbl(maps, {
-          [prefix .. "q"] = {
+          [prefix .. "Q"] = {
             "<cmd>DiffviewClose<cr>",
             desc = "Quit Diffview",
           }, -- Toggle the file panel.

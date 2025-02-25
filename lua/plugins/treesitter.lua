@@ -16,8 +16,12 @@ return {
       "markdown",
       "html",
       "jsonc" ,
-      "groovy"
+      "groovy",
+      "http",
+      "diff"
       -- add more arguments for adding more treesitter parsers
     })
+
+    vim.treesitter.language.register('markdown', 'octo')
   end,
 }
